@@ -1,0 +1,16 @@
+{
+  "name": "upsky.cz",
+  "type": "module",
+  "version": "1.0.0",
+  "repository": "OzzyCzech/kalendar.bsky.social.git",
+  "author": "Roman Ožana <roman@ozana.cz>",
+  "license": "MIT",
+  "scripts": {
+    "calendar": "node --env-file=.env --no-warnings ./src/calendar.js"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.12.2",
+    "holidays-cs": "^0.1.9",
+    "luxon": "^3.4.4"
+  }
+}

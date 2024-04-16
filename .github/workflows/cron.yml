@@ -1,0 +1,21 @@
+name: Post to Bluesky
+
+on:
+  workflow_dispatch: # Manually run the workflow
+  schedule:
+    - cron: "30 4 * * *" # Czech Republic time is UTC+2 ~6:30
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '21.x'
+      - run: yarn install
+      - name: Submit new post
+        run: node --no-warnings src/calendar.js
+        env:
+          CALENDAR_APP_HANDLE: "kalendar.bsky.social"
+          CALENDAR_APP_PASSWORD: ${{ secrets.CALENDAR_APP_PASSWORD }}
