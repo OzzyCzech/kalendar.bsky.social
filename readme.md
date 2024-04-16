@@ -4,7 +4,7 @@ Každý den koukám do kalendář, abych vám připomněl jmeniny a ostatní dů
 
 Všechny události posílám na [Bluesky](https://bsky.app/profile/kalendar.bsky.social).
 
-## Credits
+## Použité knihovny
 
 - [holidays-cs](https://github.com/OzzyCzech/holidays-cs/)
 - [easter-date](https://github.com/OzzyCzech/easter-date/)
