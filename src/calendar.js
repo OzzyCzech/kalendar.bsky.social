@@ -69,6 +69,6 @@ await rt.detectFacets(agent) // automatically detects mentions and links
 await agent.post({
   text: rt.text,
   facets: rt.facets,
-  langs: ['cs-CZ'],
+  langs: ['cs'],
   createdAt: new Date().toISOString(),
 })
