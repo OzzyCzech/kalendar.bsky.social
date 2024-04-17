@@ -1,6 +1,6 @@
 # Kalendář na Blusky
 
-Každý den koukám do kalendář, abych vám připomněl jmeniny a ostatní důležité události.
+Každý den koukám do kalendář, abych Vám připomněl svátky a ostatní důležité události.
 Všechna zjištění posílám na [Bluesky](https://bsky.app/profile/kalendar.bsky.social).
 
 ## Použité knihovny
