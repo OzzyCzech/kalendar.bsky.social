@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@atproto/api": "^0.12.5",
-    "holidays-cs": "^0.1.9",
+    "holidays-cs": "^0.1.10",
     "luxon": "^3.4.4"
   }
 }
