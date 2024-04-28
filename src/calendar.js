@@ -1,6 +1,7 @@
-import {BskyAgent, RichText} from "@atproto/api";
+import {BskyAgent} from "@atproto/api";
 import {getDayMeta, isFathersDay, isMothersDay} from "holidays-cs";
 import {DateTime} from "luxon";
+import {getNameDayArray} from "namedays-cs";
 
 const CALENDAR_APP_PASSWORD = process.env.CALENDAR_APP_PASSWORD;
 const CALENDAR_APP_HANDLE = process.env.CALENDAR_APP_HANDLE;
@@ -14,35 +15,47 @@ if (!CALENDAR_APP_PASSWORD || !CALENDAR_APP_HANDLE) {
 const agent = new BskyAgent({service: 'https://bsky.social'});
 await agent.login({identifier: CALENDAR_APP_HANDLE, password: CALENDAR_APP_PASSWORD})
 
-const date = DateTime.local().setLocale('cs');
+let date = DateTime.local();
 
-let text = `Dobré ráno je ${date.toFormat('cccc')}, ${date.toFormat('d. LLLL yyyy')}:`;
-let meta = getDayMeta(date.toJSDate());
+date = DateTime.fromISO('2024-03-29');
+date = DateTime.fromISO('2024-03-27');
+date = DateTime.fromISO('2024-12-24');
+date = DateTime.fromISO('2024-12-25');
+date = DateTime.fromISO('2024-01-01');
+date = DateTime.fromISO('2024-12-31');
+date = DateTime.fromISO('2024-12-31');
+date = DateTime.fromISO('2024-04-30');
+date = DateTime.fromISO('2024-05-07');
+let text = `Dobré ráno je ${date.setLocale('cs').toFormat('cccc')}, ${date.setLocale('cs').toFormat('d. LLLL yyyy')}:`;
 
 // Name day
-if (meta.names.length > 0) {
-  text += `\n\nSvátek má ${meta.names.join(' a ')}`;
+const names = getNameDayArray(date.toJSDate());
+if (names.length > 0) {
+  text += `\n\nSvátek má ${names.join(' a ')}`;
 }
 
-// Public holiday
+let meta = getDayMeta(date.toJSDate());
+
+// Easter days in Holy Week
+if (meta.isHolyWeek && !meta.easter.isEasterMonday && !meta.easter.isGoodFriday) {
+  text += ` (je ${meta.easter.name})`;
+}
+
 if (meta.isPublicHoliday) {
-  if (date.day === 24 && date.month === 12) {
-    text += `\n\n🎄 Štědrý den a obchody mají dnes ${meta.shops.status}.`;
-  } else if (date.day === 1 && date.month === 1) {
-    text += `\n\n🎉 Nový rok a obchody mají dnes ${meta.shops.status}. ${meta.publicHoliday}`;
+  if (date.toFormat('ddMM') === '0101') {
+    text += `\n\n🎉 Nový rok!\n\nSlavíme ${meta.publicHoliday}. Obchody mají dnes ${meta.shops.status}`;
+  } else if (date.toFormat('ddMM') === '2412') {
+    text += `\n\n🎄 Štědrý den. Obchody mají dnes ${meta.shops.status}.`;
+  } else if (meta.easter?.isGoodFriday || meta.easter?.isEasterMonday) {
+    text += `\n\n🐣 ${meta.easter.name}. Obchody mají dnes ${meta.shops.status}.`;
   } else {
-    text += `\n\nSlavíme ${meta.publicHoliday} a obchody mají dnes ${meta.shops.status}.`;
+    text += `\n\nSlavíme ${meta.publicHoliday}. Obchody mají dnes ${meta.shops.status}.`;
   }
-}
-
-// Easter (special days)
-if (meta.easter && !meta.easter.isGoodFriday && !meta.easter.isEasterMonday) {
-  text += `\n\n${meta.easter.name}`;
 }
 
 // Other significant days
 if (meta.isSignificantDay) {
-  text += `\n\nSlavíme ${meta.significantDay.name} ${meta.significantDay.year ? `(${meta.significantDay.year})` : ''}.`;
+  text += `\n\n${meta.significantDay.name} (${meta.significantDay.year})`;
 }
 
 // Mothers and Fathers day
@@ -55,10 +68,14 @@ if (isFathersDay(date)) {
   text += '\n\nDnes slavíme Den otců 🎮';
 }
 
-// Shops alert for tomorrow
-const next = getDayMeta(date.plus({days: 1}));
-if (next.isPublicHoliday && !next.shops.areOpen) {
-  text += `\n\n🔥 Bacha zítra mají obchody ${next.shops.status}!`;
+// Tomorrow holiday alert
+const next = getDayMeta(date.plus({days: 1}).toJSDate());
+if (next.isPublicHoliday) {
+  if (next.shops.areOpen) {
+    text += `\n\nZítra je státní svátek, ale obchody budou otevřené.`;
+  } else {
+    text += `\n\n🔥 POZOR! Zítra je státní svátek a obchody mají ${next.shops.status}.`;
+  }
 }
 
 console.log('Post text:', text);
