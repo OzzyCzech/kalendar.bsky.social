@@ -1,4 +1,4 @@
-import {BskyAgent} from "@atproto/api";
+import {BskyAgent, RichText} from "@atproto/api";
 import {getDayMeta, isFathersDay, isMothersDay} from "holidays-cs";
 import {DateTime} from "luxon";
 import {getNameDayArray} from "namedays-cs";
