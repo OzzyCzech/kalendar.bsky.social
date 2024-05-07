@@ -33,13 +33,13 @@ if (meta.isHolyWeek && !meta.easter.isEasterMonday && !meta.easter.isGoodFriday)
 
 if (meta.isPublicHoliday) {
   if (date.toFormat('ddMM') === '0101') {
-    text += `\n\n🎉 Nový rok!\n\nSlavíme ${meta.publicHoliday}. Obchody mají dnes ${meta.shops.status}`;
+    text += `\n\n🎉 Nový rok!\n\nSlavíme 🇨🇿 ${meta.publicHoliday}. Obchody mají dnes ${meta.shops.status}`;
   } else if (date.toFormat('ddMM') === '2412') {
     text += `\n\n🎄 Štědrý den. Obchody mají dnes ${meta.shops.status}.`;
   } else if (meta.easter?.isGoodFriday || meta.easter?.isEasterMonday) {
     text += `\n\n🐣 ${meta.easter.name}. Obchody mají dnes ${meta.shops.status}.`;
   } else {
-    text += `\n\nSlavíme ${meta.publicHoliday}. Obchody mají dnes ${meta.shops.status}.`;
+    text += `\n\nSlavíme 🇨🇿 ${meta.publicHoliday}. Obchody mají dnes ${meta.shops.status}.`;
   }
 }
 
@@ -62,9 +62,9 @@ if (isFathersDay(date)) {
 const next = getDayMeta(date.plus({days: 1}).toJSDate());
 if (next.isPublicHoliday) {
   if (next.shops.areOpen) {
-    text += `\n\nZítra je státní svátek, ale obchody budou otevřené.`;
+    text += `\n\nZítra je sice státní svátek, ale obchody budou otevřené.`;
   } else {
-    text += `\n\n🔥 POZOR! Zítra je státní svátek a obchody mají ${next.shops.status}.`;
+    text += `\n\n🔥 POZOR! Zítra je státní svátek a obchody mají ${next.shops.status}!`;
   }
 }
 
