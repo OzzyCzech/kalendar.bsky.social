@@ -16,8 +16,7 @@ if (!CALENDAR_APP_PASSWORD || !CALENDAR_APP_HANDLE) {
 const agent = new BskyAgent({service: 'https://bsky.social'});
 await agent.login({identifier: CALENDAR_APP_HANDLE, password: CALENDAR_APP_PASSWORD})
 
-//let date = DateTime.local();
-let date = DateTime.fromISO('2024-04-13');
+let date = DateTime.local();
 let text = `Dobré ráno je ${date.setLocale('cs').toFormat('cccc')}, ${date.setLocale('cs').toFormat('d. LLLL yyyy')}:`;
 
 // Name day
