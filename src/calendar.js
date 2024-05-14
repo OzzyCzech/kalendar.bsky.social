@@ -49,6 +49,7 @@ if (meta.isSignificantDay) {
 	text += `\n\n${meta.significantDay.name} (${meta.significantDay.year})`;
 }
 
+// International days
 const days = getInternationalDays(date.toJSDate());
 if (days.length > 0) {
 	text += `\n\n${days.map(day => `${day.icon ?? '🗓️'} ${day.name}`).join('\n')}`
