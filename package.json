@@ -9,9 +9,10 @@
     "calendar": "node --env-file=.env --no-warnings ./src/calendar.js"
   },
   "dependencies": {
-    "@atproto/api": "^0.12.9",
-    "holidays-cs": "^1.0.2",
+    "@atproto/api": "^0.12.10",
+    "holidays-cs": "^2.0.1",
+    "international-days-cs": "^0.0.3",
     "luxon": "^3.4.4",
-    "namedays-cs": "^0.0.10"
+    "namedays-cs": "^0.0.13"
   }
 }
