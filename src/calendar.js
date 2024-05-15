@@ -1,7 +1,7 @@
 import {BskyAgent, RichText} from "@atproto/api";
 import {getDayMeta} from "holidays-cs";
 import {DateTime} from "luxon";
-import {getNameDayArray} from "namedays-cs";
+import {getNameDay} from "namedays-cs";
 import {getInternationalDays} from "international-days-cs";
 
 const CALENDAR_APP_PASSWORD = process.env.CALENDAR_APP_PASSWORD;
@@ -20,7 +20,7 @@ let date = DateTime.local();
 let text = `Dobré ráno je ${date.setLocale('cs').toFormat('cccc')}, ${date.setLocale('cs').toFormat('d. LLLL yyyy')}:`;
 
 // Name day
-const names = getNameDayArray(date.toJSDate());
+const names = getNameDay(date.toJSDate());
 if (names.length > 0) {
 	text += `\n\nSvátek má ${names.join(' a ')}`;
 }

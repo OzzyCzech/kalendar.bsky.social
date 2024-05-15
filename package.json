@@ -13,6 +13,6 @@
     "holidays-cs": "^2.0.1",
     "international-days-cs": "^0.0.4",
     "luxon": "^3.4.4",
-    "namedays-cs": "^0.0.13"
+    "namedays-cs": "^0.1.0"
   }
 }
