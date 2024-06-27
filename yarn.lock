@@ -58,18 +58,18 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-holidays-cs@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.0.3.tgz#2cdb1d0bdbe497339a5a8070c375753531cd0cdd"
-  integrity sha512-b8B47NEzOnwRXKJG23f1oZogkgr8pJU6Om7iVySj6NnKNAqtbSqSLCKNyLk7Hn/P4QkuBywywtQZUDSsrr4+KQ==
+holidays-cs@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.0.4.tgz#0c281ae9eba93c1c0692448d01f255e017e5068a"
+  integrity sha512-faD96MOGxaFoffK/ZlcL03F32JsEVSYsM5NU9n7UmzguTeLEZ2fAtTyK6arHapmA0q4RAE9+UtK6GJxCK/oCxg==
   dependencies:
     easter-date "0.0.10"
     luxon "^3.4.4"
 
-international-days-cs@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-0.0.6.tgz#83f515f14c17b82890cbb8345611998e40b8c5d0"
-  integrity sha512-OELetVEBiZ+MLoHmInAxQud/VkWuxt9AWY6PK2Khmm1qXGvAZc1uBGjmi56gapHvqIK03iEM1GaKVhYNF5gbmQ==
+international-days-cs@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-0.0.7.tgz#74afcf59ad2bed4c734620bf8199d2aa153cc08f"
+  integrity sha512-9LBKO97+LX7i8a7Nzka8HTM61arU0sMwnL4t6gAg5RbMkjA370bOx+7b1KC2K+Kw/JIQByC9hAzhFkUvzm8P4w==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
@@ -86,10 +86,10 @@ multiformats@^9.4.2, multiformats@^9.9.0:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
   integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
-namedays-cs@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.4.tgz#5baec8ddc86455433555f6f22d9cc1254128117c"
-  integrity sha512-3H4QumEfa1WM3vuusyVbKeL6OsELBvjqIfhO9kSgWr1Vv5o6GKoMDYv/etWuQjfB1DNha9ByDS7IR1YxxFhs1g==
+namedays-cs@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.5.tgz#eb6339f5f002c63d092f1a3a74d9a9b132ec2333"
+  integrity sha512-sRuXKRsRra54j2ulHnpmDB6Qi2BWel1p+OOoUzsrqRw3IQG2899f+j1gcEWArQiPhjhKxWmsI+WHNL4JkiRMog==
 
 tlds@^1.234.0:
   version "1.252.0"
