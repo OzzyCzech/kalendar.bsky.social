@@ -2,15 +2,16 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.12.22":
-  version "0.12.22"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.12.22.tgz#1880a93a0caa4485cd8463bd1e10bf2424b9826c"
-  integrity sha512-TIXSnf3qqyX40Ei/FkK4H24w+7s5rOc63TPwrGakRBOqIgSNBKOggei8I600fJ/AXB7HO6Vp9tBmDVOt2+021A==
+"@atproto/api@^0.12.23":
+  version "0.12.23"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.12.23.tgz#b3409817d0b981a64f30d16e8257f0fe261338af"
+  integrity sha512-fgQ30u+q9smX5g41eep7fISSkSAhRkX0inc81PZ82QwcHbFkC8ePaha/KP0CoTaPWKi7EsC89Z/8BEBCJo0oBA==
   dependencies:
     "@atproto/common-web" "^0.3.0"
     "@atproto/lexicon" "^0.4.0"
     "@atproto/syntax" "^0.3.0"
     "@atproto/xrpc" "^0.5.0"
+    await-lock "^2.2.2"
     multiformats "^9.9.0"
     tlds "^1.234.0"
 
@@ -47,6 +48,11 @@
   dependencies:
     "@atproto/lexicon" "^0.4.0"
     zod "^3.21.4"
+
+await-lock@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/await-lock/-/await-lock-2.2.2.tgz#a95a9b269bfd2f69d22b17a321686f551152bcef"
+  integrity sha512-aDczADvlvTGajTDjcjpJMqRkOF6Qdz3YbPZm/PyW6tKPkx2hlYBzxMhEywM/tU72HrVZjgl5VCdRuMlA7pZ8Gw==
 
 easter-date@0.0.10:
   version "0.0.10"
@@ -86,10 +92,10 @@ multiformats@^9.4.2, multiformats@^9.9.0:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
   integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
-namedays-cs@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.5.tgz#eb6339f5f002c63d092f1a3a74d9a9b132ec2333"
-  integrity sha512-sRuXKRsRra54j2ulHnpmDB6Qi2BWel1p+OOoUzsrqRw3IQG2899f+j1gcEWArQiPhjhKxWmsI+WHNL4JkiRMog==
+namedays-cs@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.6.tgz#cbc52246a96e8701bd683e743701cf211d1cbbf6"
+  integrity sha512-BT3Pqyog9r6und2ZiwT9z5Woh1SCRE6W1FrQ6idkgZUAlPcNJK23krfWIWTuG9Y2/XqaNckZirCU6fAlet7Eyg==
 
 tlds@^1.234.0:
   version "1.252.0"
