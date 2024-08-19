@@ -11,8 +11,8 @@
   "dependencies": {
     "@atproto/api": "^0.13.1",
     "holidays-cs": "^2.0.6",
-    "international-days-cs": "^1.0.0",
+    "international-days-cs": "^1.0.1",
     "luxon": "^3.5.0",
-    "namedays-cs": "^0.1.7"
+    "namedays-cs": "^0.1.8"
   }
 }
