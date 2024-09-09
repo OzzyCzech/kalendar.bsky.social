@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.1.tgz#fbf4306e4465d5467aaf031308c1b47dcc8039d0"
-  integrity sha512-DL3iBfavn8Nnl48FmnAreQB0k0cIkW531DJ5JAHUCQZo10Nq0ZLk2/WFxcs0KuBG5wuLnGUdo+Y6/GQPVq8dYw==
+"@atproto/api@^0.13.6":
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.6.tgz#2500e9d7143e6718089632300c42ce50149f8cd5"
+  integrity sha512-58emFFZhqY8nVWD3xFWK0yYqAmJ2un+NaTtZxBbRo00mGq1rz9VXTpVmfoHFcuXL1hoDQN3WyJfsub8r6xGOgg==
   dependencies:
     "@atproto/common-web" "^0.3.0"
     "@atproto/lexicon" "^0.4.1"
     "@atproto/syntax" "^0.3.0"
-    "@atproto/xrpc" "^0.6.0"
+    "@atproto/xrpc" "^0.6.1"
     await-lock "^2.2.2"
     multiformats "^9.9.0"
     tlds "^1.234.0"
@@ -41,10 +41,10 @@
   resolved "https://registry.yarnpkg.com/@atproto/syntax/-/syntax-0.3.0.tgz#fafa2dbea9add37253005cb663e7373e05e618b3"
   integrity sha512-Weq0ZBxffGHDXHl9U7BQc2BFJi/e23AL+k+i5+D9hUq/bzT4yjGsrCejkjq0xt82xXDjmhhvQSZ0LqxyZ5woxA==
 
-"@atproto/xrpc@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.6.0.tgz#668c3262e67e2afa65951ea79a03bfe3720ddf5c"
-  integrity sha512-5BbhBTv5j6MC3iIQ4+vYxQE7nLy2dDGQ+LYJrH8PptOCUdq0Pwg6aRccQ3y52kUZlhE/mzOTZ8Ngiy9pSAyfVQ==
+"@atproto/xrpc@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.6.1.tgz#dcd1315c8c60eef5af2db7fa4e35a38ebc6d79d5"
+  integrity sha512-Zy5ydXEdk6sY7FDUZcEVfCL1jvbL4tXu5CcdPqbEaW6LQtk9GLds/DK1bCX9kswTGaBC88EMuqQMfkxOhp2t4A==
   dependencies:
     "@atproto/lexicon" "^0.4.1"
     zod "^3.23.8"
@@ -72,10 +72,10 @@ holidays-cs@^2.0.6:
     easter-date "0.0.13"
     luxon "^3.4.4"
 
-international-days-cs@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.1.tgz#38f8b0e3120b21bc1f125867130d697031decbf8"
-  integrity sha512-pJznZ0Q3DykBAqZehwuxf4bWjEcw5J5RRC5ZSeeee77UPyTKDQDNeQ0rVAJqhMa2jhWYlEvTd4OiPj7U8cCzSg==
+international-days-cs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.2.tgz#f8b7106c1fffd5b7a4fbd4c1b622a13e248cbecd"
+  integrity sha512-O6neAz5qMIPT9uDcjrMeSxfdGUvD/OUEjIxusXjcws6Qkzb6zOZIzXHtyoPILSbW3FY1WFUrPNp3wFiSYN2kkA==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
@@ -97,10 +97,10 @@ multiformats@^9.4.2, multiformats@^9.9.0:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
   integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
-namedays-cs@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.8.tgz#09044ee28b8e205be40d19e376fdebbdf8bc720b"
-  integrity sha512-CPtFIVqX1Fq4L/adLPo4bGS9nusUX3FH0dneBnz0q26l+mdVT/k09EFi7dYomlNyDVGJM8/j04LWk0wceOYwcg==
+namedays-cs@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.9.tgz#3b6d310a939f2cfe44a860a7cdd65d23eddbc97b"
+  integrity sha512-Of42yWuj7evQxt2wqYLqooIGayxntYqooJ06XqmOOu4BgL9+PtcHb6eG/DksRLUf1u2Fw03Eb8xlE8+gRhfAhg==
 
 tlds@^1.234.0:
   version "1.252.0"
