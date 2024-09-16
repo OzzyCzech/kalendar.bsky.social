@@ -2,18 +2,19 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.6.tgz#2500e9d7143e6718089632300c42ce50149f8cd5"
-  integrity sha512-58emFFZhqY8nVWD3xFWK0yYqAmJ2un+NaTtZxBbRo00mGq1rz9VXTpVmfoHFcuXL1hoDQN3WyJfsub8r6xGOgg==
+"@atproto/api@^0.13.7":
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.7.tgz#072eba2025d5251505f17b0b5d2de33749ea5ee4"
+  integrity sha512-41kSLmFWDbuPOenb52WRq1lnBkSZrL+X29tWcvEt6SZXK4xBoKAalw1MjF+oabhzff12iMtNaNvmmt2fu1L+cw==
   dependencies:
     "@atproto/common-web" "^0.3.0"
     "@atproto/lexicon" "^0.4.1"
     "@atproto/syntax" "^0.3.0"
-    "@atproto/xrpc" "^0.6.1"
+    "@atproto/xrpc" "^0.6.2"
     await-lock "^2.2.2"
     multiformats "^9.9.0"
     tlds "^1.234.0"
+    zod "^3.23.8"
 
 "@atproto/common-web@^0.3.0":
   version "0.3.0"
@@ -41,10 +42,10 @@
   resolved "https://registry.yarnpkg.com/@atproto/syntax/-/syntax-0.3.0.tgz#fafa2dbea9add37253005cb663e7373e05e618b3"
   integrity sha512-Weq0ZBxffGHDXHl9U7BQc2BFJi/e23AL+k+i5+D9hUq/bzT4yjGsrCejkjq0xt82xXDjmhhvQSZ0LqxyZ5woxA==
 
-"@atproto/xrpc@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.6.1.tgz#dcd1315c8c60eef5af2db7fa4e35a38ebc6d79d5"
-  integrity sha512-Zy5ydXEdk6sY7FDUZcEVfCL1jvbL4tXu5CcdPqbEaW6LQtk9GLds/DK1bCX9kswTGaBC88EMuqQMfkxOhp2t4A==
+"@atproto/xrpc@^0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.6.2.tgz#634228a7e533de01bda2214837d11574fdadad55"
+  integrity sha512-as/gb08xJb02HAGNrSQSumCe10WnOAcnM6bR6KMatQyQJuEu7OY6ZDSTM/4HfjjoxsNqdvPmbYuoUab1bKTNlA==
   dependencies:
     "@atproto/lexicon" "^0.4.1"
     zod "^3.23.8"
@@ -72,10 +73,10 @@ holidays-cs@^2.0.6:
     easter-date "0.0.13"
     luxon "^3.4.4"
 
-international-days-cs@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.2.tgz#f8b7106c1fffd5b7a4fbd4c1b622a13e248cbecd"
-  integrity sha512-O6neAz5qMIPT9uDcjrMeSxfdGUvD/OUEjIxusXjcws6Qkzb6zOZIzXHtyoPILSbW3FY1WFUrPNp3wFiSYN2kkA==
+international-days-cs@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.4.tgz#cfd3ad10b12b6d8a1babc642c4fabcf956db3c7f"
+  integrity sha512-3ShL6MZbvXDItLGZJxBdz32/Sv9g+Yi4XhaCu3YHGNvlbe4E7CW9XY6pDzoHANJTTXtXOz37m0dZVpDWAohorg==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
