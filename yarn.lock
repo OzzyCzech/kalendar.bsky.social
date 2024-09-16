@@ -55,23 +55,23 @@ await-lock@^2.2.2:
   resolved "https://registry.yarnpkg.com/await-lock/-/await-lock-2.2.2.tgz#a95a9b269bfd2f69d22b17a321686f551152bcef"
   integrity sha512-aDczADvlvTGajTDjcjpJMqRkOF6Qdz3YbPZm/PyW6tKPkx2hlYBzxMhEywM/tU72HrVZjgl5VCdRuMlA7pZ8Gw==
 
-easter-date@0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-0.0.13.tgz#45f442be35dc41b4407c02dde7d8a30122ede325"
-  integrity sha512-pD5nI150DWuctJ/xghCGGF15DkX299KfyXl69wt/fm48BnYTB/+Evo6+KM4iXMKNQwWSrx4da8hXTi5O/ULk2A==
+easter-date@0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-0.0.16.tgz#afe3a9819dc1ded6faebc73accfa9da1c476fbc9"
+  integrity sha512-kuX5FJNE0MuF+eA/YXB2OG7bVH0nUKk67y8xy0NVdUMIWL5C9M6Lz3kLBtK/BW+4kKhMNcbt3kt/lA4dpFv2SA==
 
 graphemer@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-holidays-cs@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.0.6.tgz#2967ed612891b197a9ab318fd8581cf9825e1860"
-  integrity sha512-J3W01UKX/G+Y56nsG0QVpBDrCR3/BXBVVvvdKtuqvUAa5I4tqW+gR6/R9Mt6gJbLoFvgROzzI20ZE8Ts1YlL7Q==
+holidays-cs@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.0.7.tgz#bc3ebeecf923494b6288a15fed050a7bb74387bc"
+  integrity sha512-Y7XdXlrkQw3hbTEWKimiYX2kAz+qxJCv+dDENt3td/NujBvBldNrHBJDRWKdE4w4XjjJgh40+nusgBGQ/HPTrw==
   dependencies:
-    easter-date "0.0.13"
-    luxon "^3.4.4"
+    easter-date "0.0.16"
+    luxon "^3.5.0"
 
 international-days-cs@^1.0.4:
   version "1.0.4"
@@ -82,11 +82,6 @@ iso-datestring-validator@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/iso-datestring-validator/-/iso-datestring-validator-2.2.2.tgz#2daa80d2900b7a954f9f731d42f96ee0c19a6895"
   integrity sha512-yLEMkBbLZTlVQqOnQ4FiMujR6T4DEcCb1xizmvXS+OxuhwcbtynoosRzdMA69zZCShCNAbi+gJ71FxZBBXx1SA==
-
-luxon@^3.4.4:
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.4.4.tgz#cf20dc27dc532ba41a169c43fdcc0063601577af"
-  integrity sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==
 
 luxon@^3.5.0:
   version "3.5.0"
