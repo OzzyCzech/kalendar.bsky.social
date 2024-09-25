@@ -99,9 +99,9 @@ namedays-cs@^0.1.10:
   integrity sha512-/gQKMK3asTnv9X87bSYhdB1RmLuIqbVOqc7tGFAzwWHExMdaq5w2Vm++OYeis+Kljj95B1LxfgycM91o2zKOxQ==
 
 tlds@^1.234.0:
-  version "1.252.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.252.0.tgz#71d9617f4ef4cc7347843bee72428e71b8b0f419"
-  integrity sha512-GA16+8HXvqtfEnw/DTcwB0UU354QE1n3+wh08oFjr6Znl7ZLAeUgYzCcK+/CCrOyE0vnHR8/pu3XXG3vDijXpQ==
+  version "1.254.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.254.0.tgz#7131955376f7c195d5edc0a94b4a203bc36668d0"
+  integrity sha512-YY4ei7K7gPGifqNSrfMaPdqTqiHcwYKUJ7zhLqQOK2ildlGgti5TSwJiXXN1YqG17I2GYZh5cZqv2r5fwBUM+w==
 
 uint8arrays@3.0.0:
   version "3.0.0"
@@ -110,12 +110,7 @@ uint8arrays@3.0.0:
   dependencies:
     multiformats "^9.4.2"
 
-zod@^3.21.4:
-  version "3.23.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.4.tgz#c63805b2f39e10d4ab3d55eb3c8cdb472c79dfb1"
-  integrity sha512-/AtWOKbBgjzEYYQRNfoGKHObgfAZag6qUJX1VbHo2PRBgS+wfWagEY2mizjfyAPcGesrJOcx/wcl0L9WnVrHFw==
-
-zod@^3.23.8:
+zod@^3.21.4, zod@^3.23.8:
   version "3.23.8"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
   integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
