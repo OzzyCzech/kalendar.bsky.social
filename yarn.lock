@@ -73,10 +73,10 @@ holidays-cs@^2.0.7:
     easter-date "0.0.16"
     luxon "^3.5.0"
 
-international-days-cs@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.4.tgz#cfd3ad10b12b6d8a1babc642c4fabcf956db3c7f"
-  integrity sha512-3ShL6MZbvXDItLGZJxBdz32/Sv9g+Yi4XhaCu3YHGNvlbe4E7CW9XY6pDzoHANJTTXtXOz37m0dZVpDWAohorg==
+international-days-cs@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.5.tgz#f4fa9d46e4b0a8c9ed8daff263229c08292315fb"
+  integrity sha512-3+cfD+WIol4q/7CIhLCRejJzujYBqtQEWmu2d8J/iyFrLpG+22GWvmycwW07tYSdLW+vXWbR3vsr+NNPqiiOxg==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
@@ -93,10 +93,10 @@ multiformats@^9.4.2, multiformats@^9.9.0:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
   integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
-namedays-cs@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.9.tgz#3b6d310a939f2cfe44a860a7cdd65d23eddbc97b"
-  integrity sha512-Of42yWuj7evQxt2wqYLqooIGayxntYqooJ06XqmOOu4BgL9+PtcHb6eG/DksRLUf1u2Fw03Eb8xlE8+gRhfAhg==
+namedays-cs@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-0.1.10.tgz#91c5ea296938a2371e9b608a26855673e6baa90e"
+  integrity sha512-/gQKMK3asTnv9X87bSYhdB1RmLuIqbVOqc7tGFAzwWHExMdaq5w2Vm++OYeis+Kljj95B1LxfgycM91o2zKOxQ==
 
 tlds@^1.234.0:
   version "1.252.0"
