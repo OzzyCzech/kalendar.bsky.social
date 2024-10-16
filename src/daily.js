@@ -33,7 +33,7 @@ console.log(`Post text:\n\n${text}`);
 
 // If the DRY_RUN environment variable is set, skip the post creation
 if (process.env.DRY_RUN) {
-	console.log("\n\n\x1b[31m%s\x1b[0m\n\n", "!!! Dry run, skipping post creation. !!!");
+	console.error("\n\nDry run, skipping post creation. Exiting...");
 	process.exit(0);
 }
 
