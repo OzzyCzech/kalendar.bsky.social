@@ -15,7 +15,7 @@ jobs:
           node-version: '21.x'
       - run: yarn install
       - name: Submit new post
-        run: node --no-warnings src/calendar.js
+        run: node --no-warnings src/daily.js
         env:
           CALENDAR_APP_HANDLE: "kalendar.bsky.social"
           CALENDAR_APP_PASSWORD: ${{ secrets.CALENDAR_APP_PASSWORD }}
