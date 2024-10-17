@@ -18,7 +18,7 @@ if (!CALENDAR_APP_PASSWORD || !CALENDAR_APP_HANDLE) {
 }
 
 let date = DateTime.local();
-date = DateTime.fromFormat("2025-04-20", "yyyy-MM-dd");
+//date = DateTime.fromFormat("2025-04-20", "yyyy-MM-dd");
 let text = `Dobré ráno je ${date.setLocale("cs").toFormat("cccc")}, ${date.setLocale("cs").toFormat("d. LLLL yyyy")}:`;
 
 // Compile the post text
