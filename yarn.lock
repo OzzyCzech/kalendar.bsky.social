@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.13.12":
-  version "0.13.12"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.12.tgz#e7bfe42fcd530219f4e1dafc42dd397bc0850d6c"
-  integrity sha512-U/qimbjlX0MA4MsR+GDuAnFtmdFuGi7eMQZm51s9gbDUw6y4RARL6gaZ0Ju9fBZpS45sI+ShlUHzIoEiBaRvkg==
+"@atproto/api@^0.13.14":
+  version "0.13.14"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.14.tgz#3a74f0dbb19a8813d45bcf645dcc25b7e2623aca"
+  integrity sha512-CG5UpjI1WwSasSJTGadmr07EwWvl5JV658YZHcwIIg+Psk5sDloQOUJckuo1MP6wke1z6p/BUoPL4lxAATzMzA==
   dependencies:
     "@atproto/common-web" "^0.3.1"
     "@atproto/lexicon" "^0.4.2"
@@ -55,28 +55,28 @@ await-lock@^2.2.2:
   resolved "https://registry.yarnpkg.com/await-lock/-/await-lock-2.2.2.tgz#a95a9b269bfd2f69d22b17a321686f551152bcef"
   integrity sha512-aDczADvlvTGajTDjcjpJMqRkOF6Qdz3YbPZm/PyW6tKPkx2hlYBzxMhEywM/tU72HrVZjgl5VCdRuMlA7pZ8Gw==
 
-easter-date@0.0.18:
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-0.0.18.tgz#ef7e0bb60e91aee01d70868529c62b8f6b139b7d"
-  integrity sha512-3LXrC8VGRSXoD/zDPtZRy/WTVFRP5a3yaume8EO6pST+dWVBDUif7+XbTUDx6xT0uvzoa2xPy4/z0W8XPPKrbw==
+easter-date@0.0.19:
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-0.0.19.tgz#dd3fe2bf5e83772b4fcdfd87732d57cb5dae2396"
+  integrity sha512-otE4D2T9p25tkjRIpQMfflqNM5ZEHtAFVteWutWfa5/F9/vjfxtF3b9RBwNC5D6TQO8kVXVJt+UCAC4HXtIlhw==
 
 graphemer@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-holidays-cs@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.0.tgz#7107c782f6fdf7837b46b8aebe359bbc4e533dd6"
-  integrity sha512-ky0pqTT+Y6c3FW406pCMIymxqBDO+2lBmaqilNs/2/viqy3hEwMwuEGLHM/KK2HBTykzPzuzKfNEjMZ2BLA96A==
+holidays-cs@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.2.tgz#3e5f0661a099eb654f99fdc94cf59433dbe80402"
+  integrity sha512-sSlJoBKs6Na1G+HFlMJQEXZnPUlfs4t35nOuS+2kgbvJsUmzTMOdg6JWg/+Sa6amNm8UQo6yqU+LfX2N4On1gA==
   dependencies:
-    easter-date "0.0.18"
+    easter-date "0.0.19"
     luxon "^3.5.0"
 
-international-days-cs@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.8.tgz#cbc19aee740feb7733e91915014da22567ec0fe7"
-  integrity sha512-v8mMhph/SH7xxXIwU4dlRbpoGcgWafEErSwxFenkGX7PrTBZjuGrugn0SGjz3uvC4/O8WQ0Q0yP9mYv6oLkAww==
+international-days-cs@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.9.tgz#dc526d6c1868874f18b1f79b76111bab29481c84"
+  integrity sha512-b84TVjlQ//XlgDfQNIKDPumPTTfPm9a8h/rjaIzhBixflu+qebCA6IUG1jOk+gcX3bLPXKbHAuj3SnHS2eJhSg==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
