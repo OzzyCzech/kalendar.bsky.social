@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.13.14":
-  version "0.13.14"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.14.tgz#3a74f0dbb19a8813d45bcf645dcc25b7e2623aca"
-  integrity sha512-CG5UpjI1WwSasSJTGadmr07EwWvl5JV658YZHcwIIg+Psk5sDloQOUJckuo1MP6wke1z6p/BUoPL4lxAATzMzA==
+"@atproto/api@^0.13.15":
+  version "0.13.15"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.13.15.tgz#7d6f49e05cf437ef67a98f754956df42d9f3b3f8"
+  integrity sha512-zC8KH+Spcr2HE6vD4hddP5rZpWrGUTWvL8hQmUxa/sAnlsjoFyv/Oja8ZHGXoDsAl6ie5Gd77cPNxaxWH/yIBQ==
   dependencies:
     "@atproto/common-web" "^0.3.1"
     "@atproto/lexicon" "^0.4.2"
@@ -73,10 +73,10 @@ holidays-cs@^2.1.2:
     easter-date "0.0.19"
     luxon "^3.5.0"
 
-international-days-cs@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.9.tgz#dc526d6c1868874f18b1f79b76111bab29481c84"
-  integrity sha512-b84TVjlQ//XlgDfQNIKDPumPTTfPm9a8h/rjaIzhBixflu+qebCA6IUG1jOk+gcX3bLPXKbHAuj3SnHS2eJhSg==
+international-days-cs@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.10.tgz#de9102c3edfe0aa4a2ac5239551796050a016e11"
+  integrity sha512-FgmoRBr1hDHRxj4VxUwwNoAXsEaBYQk2TV3UuC0P/Ov158S6zKKM4488qX0TSlK4ZuxMOXD1/YXen50gfJ4KZQ==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
