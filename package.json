@@ -9,9 +9,9 @@
     "post": "node --env-file=.env --no-warnings src/daily.js"
   },
   "dependencies": {
-    "@atproto/api": "^0.13.15",
+    "@atproto/api": "^0.13.16",
     "holidays-cs": "^2.1.2",
-    "international-days-cs": "^1.0.10",
+    "international-days-cs": "^1.0.11",
     "luxon": "^3.5.0",
     "namedays-cs": "^0.1.12"
   }
