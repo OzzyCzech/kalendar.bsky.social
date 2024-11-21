@@ -73,10 +73,10 @@ holidays-cs@^2.1.2:
     easter-date "0.0.19"
     luxon "^3.5.0"
 
-international-days-cs@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.11.tgz#114efd712cff4ad73ab67faed935eaa8d412389b"
-  integrity sha512-ykh5xvcKlKoV/Xc6/J8f/pJ+nFu43hYgtSB8X/DB4GeXeLf1qXig/ETqlxXTx+i610CoH1NIO5BN0lUeWIKsQw==
+international-days-cs@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.0.12.tgz#b7bd06801a3d25cc9cf09b17fe47d13818be88d6"
+  integrity sha512-ch/cgfzfpZT5XNb/BI7eOCjvUtUHR97n2OSok9BoBPdVuz14vzyby4R+TpMfnCNDGjchY+40eEknoxbmx1Kzmw==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
