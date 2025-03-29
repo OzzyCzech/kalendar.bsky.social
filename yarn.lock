@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.14.9":
-  version "0.14.9"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.14.9.tgz#5a49b36348b11376a6b2a82316a90b8cf1784ca8"
-  integrity sha512-9S7Vl6gK8hmy0+Gw5AWriUsQfQYZxwW7yTK5UdPPGlmjvQP49YeSLrsxB1ZkTyrlLSG2tpYrGsN4vco6KOORAQ==
+"@atproto/api@^0.14.16":
+  version "0.14.16"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.14.16.tgz#7b59eb83a27e906e0dc442d3de0f0d3869092b4a"
+  integrity sha512-xzUK3KVdp1TDJJ09Di2rvS/fisVctvMHO7Er0XhYviL3V4lxGQPNT3pHwbTbbb22QP7xH/d5ghCgfdIoS5Z8/A==
   dependencies:
     "@atproto/common-web" "^0.4.0"
-    "@atproto/lexicon" "^0.4.8"
-    "@atproto/syntax" "^0.3.4"
-    "@atproto/xrpc" "^0.6.10"
+    "@atproto/lexicon" "^0.4.9"
+    "@atproto/syntax" "^0.4.0"
+    "@atproto/xrpc" "^0.6.11"
     await-lock "^2.2.2"
     multiformats "^9.9.0"
     tlds "^1.234.0"
@@ -26,28 +26,28 @@
     uint8arrays "3.0.0"
     zod "^3.23.8"
 
-"@atproto/lexicon@^0.4.8":
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/@atproto/lexicon/-/lexicon-0.4.8.tgz#389d09f14e190b0e607348613ec5ded586a7df47"
-  integrity sha512-NPhu4MNHqft4muvHvcU0BrkWoEpTI+OmbQzvZzzRpw54MW3PfrQ4TPEpAfPOrWugPB9y4mD+l8OMN1c9eOGWMQ==
+"@atproto/lexicon@^0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@atproto/lexicon/-/lexicon-0.4.9.tgz#612951a85ecc1398366bd837cda6be89440f179d"
+  integrity sha512-/tmEuHQFr51V2V7EAVJzaA40sqJ7ylAZpR962VbOsPtmcdOHvezbjVHYEMXgfb927hS+xqbVyzBTbu5w9v8prA==
   dependencies:
     "@atproto/common-web" "^0.4.0"
-    "@atproto/syntax" "^0.3.4"
+    "@atproto/syntax" "^0.4.0"
     iso-datestring-validator "^2.2.2"
     multiformats "^9.9.0"
     zod "^3.23.8"
 
-"@atproto/syntax@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@atproto/syntax/-/syntax-0.3.4.tgz#28326c73f8dff010399145f5bd4ceeeb1ab206ba"
-  integrity sha512-8CNmi5DipOLaVeSMPggMe7FCksVag0aO6XZy9WflbduTKM4dFZVCs4686UeMLfGRXX+X966XgwECHoLYrovMMg==
+"@atproto/syntax@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@atproto/syntax/-/syntax-0.4.0.tgz#bec71552087bb24c208a06ef418c0040b65542f2"
+  integrity sha512-b9y5ceHS8YKOfP3mdKmwAx5yVj9294UN7FG2XzP6V5aKUdFazEYRnR9m5n5ZQFKa3GNvz7de9guZCJ/sUTcOAA==
 
-"@atproto/xrpc@^0.6.10":
-  version "0.6.10"
-  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.6.10.tgz#c3500e452ddbc792c2b6f39a905e25ecb1a049c6"
-  integrity sha512-ClMiO+oAl3KrFe7sdo8Wzw81yV7EpEradZLJnYilPq4s7uF0by1jHGI/LarHBKHnE5RpaFpBC/5XD/ZzgmvAeg==
+"@atproto/xrpc@^0.6.11":
+  version "0.6.11"
+  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.6.11.tgz#54c527e39a2f5ddd2655b11f7cb99b8f303d8364"
+  integrity sha512-J2cZP8FjoDN0UkyTYBlCvKvxwBbDm4dld47u6FQK30RJy9YpSiUkdxJJ10NYqpi7JVny3M0qWQgpWJDV94+PdA==
   dependencies:
-    "@atproto/lexicon" "^0.4.8"
+    "@atproto/lexicon" "^0.4.9"
     zod "^3.23.8"
 
 "@esbuild/aix-ppc64@0.24.2":
@@ -382,10 +382,10 @@ deep-eql@^5.0.1:
   resolved "https://registry.yarnpkg.com/deep-eql/-/deep-eql-5.0.2.tgz#4b756d8d770a9257300825d52a2c2cff99c3a341"
   integrity sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==
 
-easter-date@0.0.20:
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-0.0.20.tgz#0eb6a91957a99775c85a6b375a9e73a37c7e8579"
-  integrity sha512-TrwXiUZaTo5SHN9FlFRZWBdRydo0bZ1mYYCCSS869ZLEUaTKmMYRj5JvMatNsREeNhu/BRLD6f5lNRUfZzxZnA==
+easter-date@0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-0.0.21.tgz#799e8b45c2a046998322f7464d91ef2b95e2cbb3"
+  integrity sha512-hTQczqRXwH9Wmo0VlE89De5E6K3zmAPI7PeB02Di6YjzkyPXHqXY+BHMZHiypHOXHjWtt2Z8cTc+BLAHg7jOBQ==
 
 es-module-lexer@^1.6.0:
   version "1.6.0"
@@ -445,18 +445,19 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-holidays-cs@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.3.tgz#5bc240665ab1e0b6ba57b7f59ef63c894a659204"
-  integrity sha512-Fm7leEoCRZWhQGLUHZSLNWiWZY1kZGR8Uop3mxTJQxPUP03WwTekgF6fCuwPGjOtLWjyLtCsZd+iwhaG9Jjf0Q==
+holidays-cs@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.4.tgz#97aee2d562ab997d80b86d620be267a16ba08598"
+  integrity sha512-koP5MpPrH3ZTGWbqhqC8HhT+IP3KHpIXx2DXHoXI7atXV6uW+Gs/Vg1F5sDNxkfxJN21Mr5YbHNhZxnzdwFqng==
   dependencies:
-    easter-date "0.0.20"
-    luxon "^3.5.0"
+    easter-date "0.0.21"
+    luxon "^3.6.0"
+    vitest "^3.0.9"
 
-international-days-cs@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.1.5.tgz#c262c8304c4fe60d2ca76795f92f269ae44f07f4"
-  integrity sha512-nltAKRDaCxc5S0y9I61REfgInCC/AfxGVX2dJgxj7Yya0zN6QHVH/zK2pw6FakXv4ZuGj2T3WAQKEzV+luOnCA==
+international-days-cs@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.1.6.tgz#eecce8aa737cfdb26aa37880b7b81a571182960b"
+  integrity sha512-BXuXyXQOqfUdgXNk66k8ZiPDOwoAvLAu13/Exlh06QR6uRJXJT4F+Y63m0LDR5t9syPxYC7LIMhpFTwr2ijBRQ==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
@@ -473,10 +474,10 @@ loupe@^3.1.3:
   resolved "https://registry.yarnpkg.com/loupe/-/loupe-3.1.3.tgz#042a8f7986d77f3d0f98ef7990a2b2fef18b0fd2"
   integrity sha512-kkIp7XSkP78ZxJEsSxW3712C6teJVoeHHwgo9zJ380de7IYyJ2ISlxojcH2pC5OFLewESmnRi/+XCDIEEVyoug==
 
-luxon@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.5.0.tgz#6b6f65c5cd1d61d1fd19dbf07ee87a50bf4b8e20"
-  integrity sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ==
+luxon@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.6.0.tgz#e84453dbdbd716b5eac95bee702b379863059f83"
+  integrity sha512-WE7p0p7W1xji9qxkLYsvcIxZyfP48GuFrWIBQZIsbjCyf65dG1rv4n83HcOyEyhvzxJCrUoObCRNFgRNIQ5KNA==
 
 magic-string@^0.30.17:
   version "0.30.17"
