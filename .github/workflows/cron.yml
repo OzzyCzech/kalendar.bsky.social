@@ -3,7 +3,7 @@ name: Post to Bluesky
 on:
   workflow_dispatch: # Manually run the workflow
   schedule:
-    - cron: "0 5 * * *" # Czech Republic time is UTC+2 ~6:30
+    - cron: "0 4 * * *" # Czech Republic time is UTC+2 ~6:30
 
 jobs:
   build:
