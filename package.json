@@ -6,16 +6,17 @@
   "author": "Roman Ožana <roman@ozana.cz>",
   "license": "MIT",
   "scripts": {
-    "post": "node --env-file=.env --no-warnings src/daily.js"
+    "post": "node --env-file=.env --no-warnings src/daily.js",
+    "test": "vitest"
   },
   "dependencies": {
-    "@atproto/api": "^0.14.16",
-    "holidays-cs": "^2.1.4",
+    "@atproto/api": "^0.14.22",
+    "holidays-cs": "^2.1.6",
     "international-days-cs": "^1.1.6",
-    "luxon": "^3.6.0",
+    "luxon": "^3.6.1",
     "namedays-cs": "^1.0.1"
   },
   "devDependencies": {
-    "vitest": "^3.0.9"
+    "vitest": "^3.1.1"
   }
 }
