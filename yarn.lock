@@ -382,10 +382,10 @@ deep-eql@^5.0.1:
   resolved "https://registry.yarnpkg.com/deep-eql/-/deep-eql-5.0.2.tgz#4b756d8d770a9257300825d52a2c2cff99c3a341"
   integrity sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==
 
-easter-date@0.0.22:
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-0.0.22.tgz#d5d949c5077b98c2f67ee42c6cde64df8f29dce2"
-  integrity sha512-+3EvL+nyaVT0ch/yddr/3RB1yr0xh7a+wOzG3RY701NkrOhmKaqpAfrySMpDd29j5WCZSs1FOZXLH5/1xt5cyw==
+easter-date@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-1.0.0.tgz#a960dfe568934e93a626b295bf2c8b0ff4d63a89"
+  integrity sha512-zuRpqfvN9R3iQJZayH8nCOMRJF3DIjaNrb925qVg525EJ3B4VuYs9B3lB4GaOrHAIQyIIZz1QuckmA54Ecgt5A==
 
 es-module-lexer@^1.6.0:
   version "1.6.0"
@@ -445,12 +445,12 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-holidays-cs@^2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.7.tgz#53584bba14fb1752075c2b554f94e16be94bd901"
-  integrity sha512-9vgQYsp/DdgGhu7YfBx8hLH93nXRtaCT6IypkZg6HE8qN7vm9Gu6xO0ZmL6Z0cS/gRvZlTMVIoPMYUa4+ziCzw==
+holidays-cs@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.8.tgz#e476c9465c4e11be7a12d31528c559a0ef5bdbb1"
+  integrity sha512-4GPiUWMX5b2A0XtXUiHPbvSNe36VA6c0oOTONC8ZZesbqG9pNaor215dy7LSou4zYS0ryqSrb+yXSxN/dNP1eQ==
   dependencies:
-    easter-date "0.0.22"
+    easter-date "1.0.0"
     luxon "^3.6.1"
     vitest "^3.1.1"
 

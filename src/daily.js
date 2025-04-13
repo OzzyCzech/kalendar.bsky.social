@@ -17,9 +17,9 @@ if (!CALENDAR_APP_PASSWORD || !CALENDAR_APP_HANDLE) {
 	process.exit(1);
 }
 
-let date = DateTime.local({ zone: "Europe/Prague" });
+let date = DateTime.local({zone: "Europe/Prague"}).setLocale("cs");
 //date = DateTime.fromFormat("2025-04-20", "yyyy-MM-dd");
-let text = `Dobré ráno, je ${date.setLocale("cs").toFormat("cccc")}, ${date.setLocale("cs").toFormat("d. LLLL yyyy")}:`;
+let text = `Dobré ráno, je ${date.toFormat("cccc")}, ${date.toFormat("d. LLLL yyyy")}:`;
 
 // Compile the post text
 text += getNameDayText(date);
@@ -37,10 +37,10 @@ if (process.env.DRY_RUN) {
 	process.exit(0);
 }
 
-const agent = new AtpAgent({ service: "https://bsky.social" });
-await agent.login({ identifier: CALENDAR_APP_HANDLE, password: CALENDAR_APP_PASSWORD })
+const agent = new AtpAgent({service: "https://bsky.social"});
+await agent.login({identifier: CALENDAR_APP_HANDLE, password: CALENDAR_APP_PASSWORD})
 
-const richText = new RichText({ text });
+const richText = new RichText({text});
 await richText.detectFacets(agent) // automatically detects mentions and links
 
 await agent.post({
