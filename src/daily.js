@@ -17,7 +17,7 @@ if (!CALENDAR_APP_PASSWORD || !CALENDAR_APP_HANDLE) {
 	process.exit(1);
 }
 
-let date = DateTime.local();
+let date = DateTime.local({ zone: "Europe/Prague" });
 //date = DateTime.fromFormat("2025-04-20", "yyyy-MM-dd");
 let text = `Dobré ráno, je ${date.setLocale("cs").toFormat("cccc")}, ${date.setLocale("cs").toFormat("d. LLLL yyyy")}:`;
 
