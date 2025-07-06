@@ -17,7 +17,7 @@ export function getHolidayText(date) {
 			return `\n\n🐣 ${meta.easter.name}`;
 		}
 
-		return `\n\nSlavíme 🇨🇿 ${meta.publicHoliday}`;
+		return `\n\nSt. Svátek 🇨🇿 ${meta.publicHoliday}`;
 	}
 
 	return "";
