@@ -483,10 +483,10 @@ holidays-cs@^2.1.10:
     luxon "^3.7.1"
     vitest "^3.2.4"
 
-international-days-cs@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.1.10.tgz#f102160238ac2440fa275740717adf2afde567cb"
-  integrity sha512-QBX5W4NzLLRGQkh2bVJjG2AGBBJ2DGo0dRp5y+RJApPudeIu+0AyIiyd+AnedMxiI8Qx0B8U/ouCrAqOixqxdw==
+international-days-cs@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.1.11.tgz#0ec0d74551329e117399ad5c78b20bd5de5d575e"
+  integrity sha512-X/Z57vntNSJ5hQlvAi2S1RrTDL3bE5wgYBpAGBbhnSzUDJZmjjGpeQZdOkcSGuC3zwu+Xdk1DnUHRKztZwfbCw==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
