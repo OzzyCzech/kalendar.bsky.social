@@ -14,7 +14,7 @@
     "holidays-cs": "^2.1.10",
     "international-days-cs": "^1.1.11",
     "luxon": "^3.7.1",
-    "namedays-cs": "^1.0.4"
+    "namedays-cs": "^1.0.5"
   },
   "devDependencies": {
     "vitest": "^3.2.4"

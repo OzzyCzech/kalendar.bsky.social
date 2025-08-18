@@ -530,10 +530,10 @@ multiformats@^9.4.2, multiformats@^9.9.0:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
   integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
-namedays-cs@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-1.0.4.tgz#0c71e9027ff41479950691eff5fb5f24706556cb"
-  integrity sha512-qTCXF/9dEHtNNBvYsdzpLlJbubhk/jRjiS+qrWSsLL704YWyVSvZ8MVUK6y7G+ltOyDvwCYVoQBoGx4sV1vIYA==
+namedays-cs@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-1.0.5.tgz#c45c359e0ff9f7cee14ada1891c2cf789c447b1d"
+  integrity sha512-7PAV7b/SVjWU+pEhUQpNaDgBZuBxN/3g9yIG3Lc2iAdBm6k3vChDNbaJYTdg/ko4oQYvvZI8LWY5VZ6JvEvIxg==
 
 nanoid@^3.3.11:
   version "3.3.11"
