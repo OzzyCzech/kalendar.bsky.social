@@ -2,52 +2,52 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.16.2":
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.16.2.tgz#1b2870e9a03d88f00a27602281755fa82ec824dd"
-  integrity sha512-sSTg31J8ws8DNaoiizp+/uJideRxRaJsq+Nyl8rnSxGw0w3oCvoeRU19iRWh2t0jZEmiRJAGkveGu23NKmPYEQ==
+"@atproto/api@^0.16.11":
+  version "0.16.11"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.16.11.tgz#b43e90c7a16ce7391129d7be2f57067699211771"
+  integrity sha512-1dhfQNHiclb102RW+Ea8Nft5olfqU0Ev/vlQaSX6mWNo1aP5zT+sPODJ8+BTUOYk3vcuvL7QMkqA/rLYy2PMyw==
   dependencies:
-    "@atproto/common-web" "^0.4.2"
-    "@atproto/lexicon" "^0.4.12"
-    "@atproto/syntax" "^0.4.0"
-    "@atproto/xrpc" "^0.7.1"
+    "@atproto/common-web" "^0.4.3"
+    "@atproto/lexicon" "^0.5.1"
+    "@atproto/syntax" "^0.4.1"
+    "@atproto/xrpc" "^0.7.5"
     await-lock "^2.2.2"
     multiformats "^9.9.0"
     tlds "^1.234.0"
     zod "^3.23.8"
 
-"@atproto/common-web@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@atproto/common-web/-/common-web-0.4.2.tgz#6e3add6939da93d3dfbc8f87e26dc4f57fad7259"
-  integrity sha512-vrXwGNoFGogodjQvJDxAeP3QbGtawgZute2ed1XdRO0wMixLk3qewtikZm06H259QDJVu6voKC5mubml+WgQUw==
+"@atproto/common-web@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@atproto/common-web/-/common-web-0.4.3.tgz#b4480220b5682db09da45f4ef906eb7619c838b5"
+  integrity sha512-nRDINmSe4VycJzPo6fP/hEltBcULFxt9Kw7fQk6405FyAWZiTluYHlXOnU7GkQfeUK44OENG1qFTBcmCJ7e8pg==
   dependencies:
     graphemer "^1.4.0"
     multiformats "^9.9.0"
     uint8arrays "3.0.0"
     zod "^3.23.8"
 
-"@atproto/lexicon@^0.4.12":
-  version "0.4.12"
-  resolved "https://registry.yarnpkg.com/@atproto/lexicon/-/lexicon-0.4.12.tgz#89a704789d983f8405a52095769b5b58d87f5af7"
-  integrity sha512-fcEvEQ1GpQYF5igZ4IZjPWEoWVpsEF22L9RexxLS3ptfySXLflEyH384e7HITzO/73McDeaJx3lqHIuqn9ulnw==
+"@atproto/lexicon@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@atproto/lexicon/-/lexicon-0.5.1.tgz#e9b7d5c70dc5a38518a8069cd80fea77ab526947"
+  integrity sha512-y8AEtYmfgVl4fqFxqXAeGvhesiGkxiy3CWoJIfsFDDdTlZUC8DFnZrYhcqkIop3OlCkkljvpSJi1hbeC1tbi8A==
   dependencies:
-    "@atproto/common-web" "^0.4.2"
-    "@atproto/syntax" "^0.4.0"
+    "@atproto/common-web" "^0.4.3"
+    "@atproto/syntax" "^0.4.1"
     iso-datestring-validator "^2.2.2"
     multiformats "^9.9.0"
     zod "^3.23.8"
 
-"@atproto/syntax@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@atproto/syntax/-/syntax-0.4.0.tgz#bec71552087bb24c208a06ef418c0040b65542f2"
-  integrity sha512-b9y5ceHS8YKOfP3mdKmwAx5yVj9294UN7FG2XzP6V5aKUdFazEYRnR9m5n5ZQFKa3GNvz7de9guZCJ/sUTcOAA==
+"@atproto/syntax@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@atproto/syntax/-/syntax-0.4.1.tgz#f77bc610ae0914449ff3f4731861e3da429915f5"
+  integrity sha512-CJdImtLAiFO+0z3BWTtxwk6aY5w4t8orHTMVJgkf++QRJWTxPbIFko/0hrkADB7n2EruDxDSeAgfUGehpH6ngw==
 
-"@atproto/xrpc@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.7.1.tgz#51a8fc131eb21bd1229129d0a46384accc50ad65"
-  integrity sha512-ANHEzlskYlMEdH18m+Itp3a8d0pEJao2qoDybDoMupTnoeNkya4VKIaOgAi6ERQnqatBBZyn9asW+7rJmSt/8g==
+"@atproto/xrpc@^0.7.5":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@atproto/xrpc/-/xrpc-0.7.5.tgz#40cef1a657b5f28af8ebec9e3dac5872e58e88ea"
+  integrity sha512-MUYNn5d2hv8yVegRL0ccHvTHAVj5JSnW07bkbiaz96UH45lvYNRVwt44z+yYVnb0/mvBzyD3/ZQ55TRGt7fHkA==
   dependencies:
-    "@atproto/lexicon" "^0.4.12"
+    "@atproto/lexicon" "^0.5.1"
     zod "^3.23.8"
 
 "@esbuild/aix-ppc64@0.25.9":
@@ -484,10 +484,10 @@ holidays-cs@^2.1.10:
     luxon "^3.7.1"
     vitest "^3.2.4"
 
-international-days-cs@^1.1.12:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.1.12.tgz#70c89b5f292e3cbf1c7478f61c22db887e924ae3"
-  integrity sha512-m135uv1Xgno6nY1Dk84yERjSLC/3Zw7wnfB8xAWRLfmNxmmkOsiQpaDOTibfV5VXFbvDD3ux2+9ELIj5CBMR3Q==
+international-days-cs@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.2.0.tgz#9b3800a64e4f98c2e027a4832d48e9eb84ad0f9b"
+  integrity sha512-b2vpUo/ySrJDDCLIESyVhrFmBX5uWr0Y5bRXQ9FlxyGtUWUV52n05L5Giw4TTW1K62ORVyt2rJyI7hVnVZr/ww==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
@@ -508,6 +508,11 @@ luxon@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.7.1.tgz#9bd09aa84a56afb00c57ea78a8ec5bd16eb24ec0"
   integrity sha512-RkRWjA926cTvz5rAb1BqyWkKbbjzCGchDUIKMCUvNi17j6f6j8uHGDV82Aqcqtzd+icoYpELmG3ksgGiFNNcNg==
+
+luxon@^3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.7.2.tgz#d697e48f478553cca187a0f8436aff468e3ba0ba"
+  integrity sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==
 
 magic-string@^0.30.17:
   version "0.30.17"
