@@ -10,11 +10,11 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@atproto/api": "^0.16.11",
-    "holidays-cs": "^2.1.10",
-    "international-days-cs": "^1.2.0",
+    "@atproto/api": "^0.17.0",
+    "holidays-cs": "^2.1.11",
+    "international-days-cs": "^1.2.1",
     "luxon": "^3.7.2",
-    "namedays-cs": "^1.0.5"
+    "namedays-cs": "^1.0.6"
   },
   "devDependencies": {
     "vitest": "^3.2.4"

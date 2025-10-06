@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atproto/api@^0.16.11":
-  version "0.16.11"
-  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.16.11.tgz#b43e90c7a16ce7391129d7be2f57067699211771"
-  integrity sha512-1dhfQNHiclb102RW+Ea8Nft5olfqU0Ev/vlQaSX6mWNo1aP5zT+sPODJ8+BTUOYk3vcuvL7QMkqA/rLYy2PMyw==
+"@atproto/api@^0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@atproto/api/-/api-0.17.0.tgz#1fe87ef703f8020dbe00bb5e5cc18622b8b91f4a"
+  integrity sha512-FNS9SW7/3kslAnJH7F4fO9/jPjXzC0NMD6u9NjJ/h4EnaIEpWHZQPkmD9Q2hvAwD6+Uo2boYZEPKkOa55Lr5Dg==
   dependencies:
     "@atproto/common-web" "^0.4.3"
     "@atproto/lexicon" "^0.5.1"
@@ -406,10 +406,10 @@ deep-eql@^5.0.1:
   resolved "https://registry.yarnpkg.com/deep-eql/-/deep-eql-5.0.2.tgz#4b756d8d770a9257300825d52a2c2cff99c3a341"
   integrity sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==
 
-easter-date@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-1.0.3.tgz#8cf578526a7e3c30afb1e937cf5f3774f942f2e3"
-  integrity sha512-UMvWqShgNTmnsW5u0m+K72ENyud7dLvhx4NGhja23TZT9uw1dg4IY3CIvOjSObj4aqEjRZ5mb54f2Khz8UWghg==
+easter-date@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/easter-date/-/easter-date-1.0.5.tgz#fc704d85b40685c9beda831090c7271c6502ea26"
+  integrity sha512-AaDoEM/t7oBIPMgZ4Et8psWEYgZC7k39DLGaIU2G246VNnKZ8o3A5qIlIKaJyHxiIyVvUnyLvohWAC2iMKRZWQ==
 
 es-module-lexer@^1.7.0:
   version "1.7.0"
@@ -475,19 +475,19 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-holidays-cs@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.10.tgz#22925d23db564d24bc2cb4bf8af56863c154d64b"
-  integrity sha512-PuwgpWt0EY4mVQcmq8sWwqcUD4l7/md2Ri0F1/65o4dR5OQmJmryfMHc2chXoX4vLJ0tIkxv5Sho9k1vUGqMwg==
+holidays-cs@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/holidays-cs/-/holidays-cs-2.1.11.tgz#129449d5922730608d4539c0c5483de06cddcae6"
+  integrity sha512-rZcB06NCP5U9a0O744B/Mtx1LVJ6nOwWP5gTSXlpSqZklTIauNsrx9rLotfJyQhK6U1t35pbgBOlovgW3gDWdw==
   dependencies:
-    easter-date "1.0.3"
-    luxon "^3.7.1"
+    easter-date "1.0.5"
+    luxon "^3.7.2"
     vitest "^3.2.4"
 
-international-days-cs@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.2.0.tgz#9b3800a64e4f98c2e027a4832d48e9eb84ad0f9b"
-  integrity sha512-b2vpUo/ySrJDDCLIESyVhrFmBX5uWr0Y5bRXQ9FlxyGtUWUV52n05L5Giw4TTW1K62ORVyt2rJyI7hVnVZr/ww==
+international-days-cs@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/international-days-cs/-/international-days-cs-1.2.1.tgz#9e4a22e495be7c1f3f35f37f7cc65610d991f8b6"
+  integrity sha512-iF0xWgld0q2uUz2MoA6j178kfNPt70BwOU/2szr+/rPD56cNZ3cnrmEUX1duC/FoKNrphNBIOZTDnxmQb3L8mQ==
 
 iso-datestring-validator@^2.2.2:
   version "2.2.2"
@@ -503,11 +503,6 @@ loupe@^3.1.0, loupe@^3.1.4:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/loupe/-/loupe-3.2.0.tgz#174073ba8e0a1d0d5e43cc08626ed8a19403c344"
   integrity sha512-2NCfZcT5VGVNX9mSZIxLRkEAegDGBpuQZBy13desuHeVORmBDyAET4TkJr4SjqQy3A8JDofMN6LpkK8Xcm/dlw==
-
-luxon@^3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.7.1.tgz#9bd09aa84a56afb00c57ea78a8ec5bd16eb24ec0"
-  integrity sha512-RkRWjA926cTvz5rAb1BqyWkKbbjzCGchDUIKMCUvNi17j6f6j8uHGDV82Aqcqtzd+icoYpELmG3ksgGiFNNcNg==
 
 luxon@^3.7.2:
   version "3.7.2"
@@ -531,10 +526,10 @@ multiformats@^9.4.2, multiformats@^9.9.0:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
   integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
-namedays-cs@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-1.0.5.tgz#c45c359e0ff9f7cee14ada1891c2cf789c447b1d"
-  integrity sha512-7PAV7b/SVjWU+pEhUQpNaDgBZuBxN/3g9yIG3Lc2iAdBm6k3vChDNbaJYTdg/ko4oQYvvZI8LWY5VZ6JvEvIxg==
+namedays-cs@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/namedays-cs/-/namedays-cs-1.0.6.tgz#95d171bcf8baf87727d1d5329b01a40177fa84f4"
+  integrity sha512-wbuj+4z2NqJtErENLXTW5M4qUiA3u2zy4V9hoBoKhXX5Yk9/L8CRq/BtWY/YRikGLTm6o48uXWnqZgYYiwAojw==
 
 nanoid@^3.3.11:
   version "3.3.11"
