@@ -1,5 +1,5 @@
 {
-  "name": "upsky.cz",
+  "name": "kalendar.bsky.social",
   "type": "module",
   "version": "1.0.0",
   "repository": "OzzyCzech/kalendar.bsky.social.git",
@@ -10,13 +10,13 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@atproto/api": "^0.17.7",
+    "@atproto/api": "^0.18.8",
     "holidays-cs": "^2.1.12",
-    "international-days-cs": "^1.2.2",
+    "international-days-cs": "^1.2.3",
     "luxon": "^3.7.2",
     "namedays-cs": "^1.0.6"
   },
   "devDependencies": {
-    "vitest": "^4.0.10"
+    "vitest": "^4.0.16"
   }
 }
