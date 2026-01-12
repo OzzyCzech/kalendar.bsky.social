@@ -10,9 +10,9 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@atproto/api": "^0.18.8",
+    "@atproto/api": "^0.18.13",
     "holidays-cs": "^2.1.12",
-    "international-days-cs": "^1.2.3",
+    "international-days-cs": "^1.2.4",
     "luxon": "^3.7.2",
     "namedays-cs": "^1.0.6"
   },
