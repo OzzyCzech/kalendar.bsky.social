@@ -3,8 +3,8 @@ name: Post to Bluesky
 on:
   workflow_dispatch: # Manually run the workflow
   schedule:
-    #- cron: "0 4 * * *" # Sumer time
-    - cron: "0 5 * * *" # Winter time
+    - cron: "0 6 * * *"
+      timezone: Europe/Prague
 
 jobs:
   build:
