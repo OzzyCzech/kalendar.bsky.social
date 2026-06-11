@@ -1,0 +1,5 @@
+# pnpm 11+ enforces a minimum release age as a supply-chain safeguard by
+# default. This project intentionally opts out so that freshly published
+# versions of our own packages (holidays-cs, namedays-cs, …) install without
+# being blocked in CI.
+minimumReleaseAge: 0
