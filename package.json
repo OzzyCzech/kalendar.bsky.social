@@ -5,19 +5,19 @@
   "repository": "OzzyCzech/kalendar.bsky.social.git",
   "author": "Roman Ožana <roman@ozana.cz>",
   "license": "MIT",
-  "packageManager": "pnpm@11.5.3",
+  "packageManager": "pnpm@11.14.0",
   "scripts": {
     "post": "node --env-file=.env --no-warnings src/daily.js",
     "test": "vitest"
   },
   "dependencies": {
-    "@atproto/api": "^0.20.13",
+    "@atproto/api": "^0.20.30",
     "holidays-cs": "2.1.14",
     "international-days-cs": "^1.3.2",
     "luxon": "^3.7.2",
     "namedays-cs": "1.2.1"
   },
   "devDependencies": {
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.10"
   }
 }
