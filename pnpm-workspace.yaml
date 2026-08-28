@@ -3,3 +3,9 @@
 # versions of our own packages (holidays-cs, namedays-cs, …) install without
 # being blocked in CI.
 minimumReleaseAge: 0
+
+# Vite (via vitest) resolves postcss/nanoid to versions with known advisories.
+# Both ranges are semver-compatible, so these overrides only raise the floor.
+overrides:
+  nanoid@<3.3.18: ^3.3.18
+  postcss@<=8.5.22: ^8.5.23
