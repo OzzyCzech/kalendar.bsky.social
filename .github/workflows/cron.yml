@@ -3,7 +3,7 @@ name: Post to Bluesky
 on:
   workflow_dispatch: # Manually run the workflow
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "43 5 * * *" # off-hour minute: GitHub delays schedules at the top of the hour
       timezone: "Europe/Prague"
 
 jobs:
