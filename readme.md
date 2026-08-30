@@ -8,7 +8,7 @@ Všechna zjištění posílám na [Bluesky](https://bsky.app/profile/kalendar.bs
 
 Bot je malý Node skript bez databáze a bez stavu. Jednou denně se probudí, poskládá
 text z několika knihoven a odešle ho. Nic si nepamatuje — den, o kterém píše, je
-vždycky „dnes“ v pražské zóně.
+vždycky „dnes“.
 
 ## Co bot posílá
 
@@ -33,18 +33,6 @@ Post se skládá z těchto částí — každou dodává jeden modul v `src/`:
 | Významný den | `get-significant-day-text.js` | `Den památky Jana Palacha (1969)` |
 | Mezinárodní dny | `get-international-day-text.js` | `🦇 Evropská noc pro netopýry` |
 | Otevírací doba obchodů | `get-shopping-alert.js` | `🚨 Zítra je státní svátek a budou zavřené obchody!!!` |
-
-Významných dnů je v roce 17 a se státními svátky se nepřekrývají — proto se
-v jednom postu obvykle potkají jen některé z těch částí.
-
-Pár detailů, které nejsou na první pohled vidět:
-
-- **Pašijový týden** se přidává jen ve dnech, které *nejsou* státní svátek. Velký
-  pátek a Velikonoční pondělí dostanou místo toho řádek se svátkem (`🐣`), ať se
-  Velikonoce nezmiňují dvakrát.
-- **Nový rok a Štědrý den** mají vlastní formulaci místo obecného „St. Svátek“.
-- **Nákupní hláška** se objeví i den *před* svátkem — varování, že zítra bude
-  zavřeno, přijde včas. Když svátek trvá dva dny, zmíní i ten druhý.
 
 ## Jak vzniká text
 
