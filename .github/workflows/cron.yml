@@ -1,10 +1,19 @@
 name: Post to Bluesky
 
+# Triggered externally (cron-job.org) via the workflow_dispatch REST API.
+# GitHub's own `schedule` event was delayed by 6-11 hours for days on end,
+# so it is deliberately not used here.
 on:
-  workflow_dispatch: # Manually run the workflow
-  schedule:
-    - cron: "43 5 * * *" # off-hour minute: GitHub delays schedules at the top of the hour
-      timezone: "Europe/Prague"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build the post and print it, but do not publish"
+        type: boolean
+        default: false
+
+concurrency:
+  group: post-to-bluesky
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -22,3 +31,4 @@ jobs:
         env:
           CALENDAR_APP_HANDLE: "kalendar.bsky.social"
           CALENDAR_APP_PASSWORD: ${{ secrets.CALENDAR_APP_PASSWORD }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
