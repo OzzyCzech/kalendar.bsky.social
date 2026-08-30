@@ -7,6 +7,7 @@ import { getNameDayText } from "./get-name-day-text.js";
 import { getInternationalDayLines } from "./get-international-day-text.js";
 import { getSignificantDayText } from "./get-significant-day-text.js";
 import { getHolyWeekName } from "./get-holy-week-name.js";
+import { hasPostedOn } from "./has-posted-on.js";
 
 const CALENDAR_APP_PASSWORD = process.env.CALENDAR_APP_PASSWORD;
 const CALENDAR_APP_HANDLE = process.env.CALENDAR_APP_HANDLE;
@@ -63,6 +64,13 @@ if (process.env.DRY_RUN) {
 
 const agent = new AtpAgent({service: "https://bsky.social"});
 await agent.login({identifier: CALENDAR_APP_HANDLE, password: CALENDAR_APP_PASSWORD})
+
+// Never post twice for the same day, no matter how often we are dispatched
+const {data} = await agent.getAuthorFeed({actor: agent.session.did, limit: 20, filter: "posts_no_replies"});
+if (hasPostedOn(data.feed, agent.session.did, date)) {
+    console.error("\n\nToday's post already exists, skipping. Exiting...");
+    process.exit(0);
+}
 
 const richText = new RichText({text});
 await richText.detectFacets(agent) // automatically detects mentions and links
