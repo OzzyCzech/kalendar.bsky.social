@@ -1,7 +1,65 @@
-# Kalendář na Blusky
+# Kalendář na Bluesky
 
-Každý den koukám do kalendář, abych Vám připomněl svátky a ostatní důležité události.
+[![Tests](https://github.com/OzzyCzech/kalendar.bsky.social/actions/workflows/tests.yml/badge.svg)](https://github.com/OzzyCzech/kalendar.bsky.social/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
+Každý den koukám do kalendáře, abych Vám připomněl svátky a ostatní důležité události.
 Všechna zjištění posílám na [Bluesky](https://bsky.app/profile/kalendar.bsky.social).
+
+Bot je malý Node skript bez databáze a bez stavu. Jednou denně se probudí, poskládá
+text z několika knihoven a odešle ho. Nic si nepamatuje — den, o kterém píše, je
+vždycky „dnes“ v pražské zóně.
+
+## Co bot posílá
+
+```
+Dobré ráno, je pátek, 28. srpen 2026:
+
+Svátek má Augustýn
+
+🦸 Den čtení komiksů na veřejnosti
+🦇 Evropská noc pro netopýry
+🌼 Národní den narcisů
+```
+
+Post se skládá z těchto částí — každou dodává jeden modul v `src/`:
+
+| Část | Modul | Příklad |
+|---|---|---|
+| Oslovení a datum | `daily.js` | `Dobré ráno, je pátek, 28. srpen 2026:` |
+| Jmeniny | `get-name-day-text.js` | `Svátek mají Václav a Václava` |
+| Pašijový týden | `get-holy-week-name.js` | ` (✝ Škaredá středa)` |
+| Státní svátek | `get-holiday-text.js` | `St. Svátek 🇨🇿 Den české státnosti` |
+| Významný den | `get-significant-day-text.js` | `Den památky Jana Palacha (1969)` |
+| Mezinárodní dny | `get-international-day-text.js` | `🦇 Evropská noc pro netopýry` |
+| Otevírací doba obchodů | `get-shopping-alert.js` | `🚨 Zítra je státní svátek a budou zavřené obchody!!!` |
+
+Významných dnů je v roce 17 a se státními svátky se nepřekrývají — proto se
+v jednom postu obvykle potkají jen některé z těch částí.
+
+Pár detailů, které nejsou na první pohled vidět:
+
+- **Pašijový týden** se přidává jen ve dnech, které *nejsou* státní svátek. Velký
+  pátek a Velikonoční pondělí dostanou místo toho řádek se svátkem (`🐣`), ať se
+  Velikonoce nezmiňují dvakrát.
+- **Nový rok a Štědrý den** mají vlastní formulaci místo obecného „St. Svátek“.
+- **Nákupní hláška** se objeví i den *před* svátkem — varování, že zítra bude
+  zavřeno, přijde včas. Když svátek trvá dva dny, zmíní i ten druhý.
+
+## Jak vzniká text
+
+Bluesky má tvrdý limit **300 grafémů** (ne bajtů a ne znaků — proto
+`Intl.Segmenter`, aby emoji a diakritika počítaly za jedna). Delší post by API
+odmítlo, takže `daily.js` hospodaří s rozpočtem podle priorit:
+
+1. **Vždy se vejde** — oslovení, jmeniny, pašijový týden, státní svátek.
+2. **Rezervuje se místo** pro nákupní hlášku, i když se přidává až na konec.
+3. **Významný den** se přidá jen celý; když se nevejde, vypadne úplně.
+4. **Mezinárodní dny** se přidávají po jednom, dokud je místo. U prvního, který
+   se nevejde, se končí.
+
+Díky tomu se nikdy neuřízne půlka slova a to podstatné zůstane i ve dnech, kdy se
+sejde svátek s pěti mezinárodními dny.
 
 ## Jak se to spouští
 
@@ -61,16 +119,30 @@ gh workflow run cron.yml --ref main                 # ostrý post
 gh workflow run cron.yml --ref main -f dry_run=true # jen vypíše text, nepublikuje
 ```
 
-### Lokálně
+### Ochrana proti duplicitě
+
+Publikace není idempotentní, a workflow se dá spustit vícekrát denně. Proto se
+[`src/daily.js`](src/daily.js) před odesláním podívá přes `getAuthorFeed`, jestli
+už dnešní post existuje, a pokud ano, skončí bez publikace. Den se počítá podle
+pražské půlnoci — viz [`src/has-posted-on.js`](src/has-posted-on.js).
+
+## Lokálně
+
+```bash
+pnpm install
+pnpm test
+pnpm post   # načte .env a odešle
+```
 
 Zkopíruj `example.env` do `.env` (je v `.gitignore`, nikdy ho necommituj) a vyplň
 app password z [Bluesky → Settings → App Passwords](https://bsky.app/settings/app-passwords)
 — ne hlavní heslo k účtu.
 
-```bash
-pnpm post   # načte .env a odešle
-pnpm test
-```
+| Proměnná | Význam |
+|---|---|
+| `CALENDAR_APP_HANDLE` | handle účtu, např. `kalendar.bsky.social` |
+| `CALENDAR_APP_PASSWORD` | app password z Bluesky |
+| `DRY_RUN` | neprázdná hodnota = jen vypsat text, nepublikovat |
 
 > [!CAUTION]
 > `DRY_RUN` se testuje na pravdivost (`if (process.env.DRY_RUN)`), takže **jakákoli
@@ -81,18 +153,63 @@ Bluesky pouští jen **10 pokusů o přihlášení denně**. Když se objeví
 `XRPCError: Invalid identifier or password`, neopakuj to dokola — vygeneruj nové
 app password.
 
-### Ochrana proti duplicitě
+### Zkoušení jiného data
 
-Publikace není idempotentní, a workflow se dá spustit vícekrát denně. Proto se
-[`src/daily.js`](src/daily.js) před odesláním podívá přes `getAuthorFeed`, jestli
-už dnešní post existuje, a pokud ano, skončí bez publikace. Den se počítá podle
-pražské půlnoci — viz [`src/has-posted-on.js`](src/has-posted-on.js).
+V `daily.js` je na to připravený zakomentovaný řádek hned pod výpočtem `date`:
+
+```js
+date = DateTime.fromFormat("2025-04-20", "yyyy-MM-dd");
+```
+
+Hodí se na Velikonoce, Štědrý den nebo dny před svátkem, kdy se chová nákupní
+hláška jinak. Nezapomeň ho zase zakomentovat.
+
+## Struktura
+
+```
+src/
+  daily.js                       vstupní bod – poskládá text a odešle ho
+  get-name-day-text.js           jmeniny
+  get-holy-week-name.js          dny pašijového týdne
+  get-holiday-text.js            státní svátky
+  get-significant-day-text.js    významné dny
+  get-international-day-text.js  mezinárodní dny
+  get-shopping-alert.js          otevírací doba obchodů o svátcích
+  has-posted-on.js               kontrola, že dnešní post ještě není venku
+tests/
+  nameday.test.js
+  velikonoce.test.js
+  duplicate.test.js
+.github/workflows/
+  cron.yml                       denní post (workflow_dispatch)
+  tests.yml                      testy při každém pushi
+```
+
+Moduly `get-*.js` jsou čisté funkce: berou `DateTime` a vracejí řetězec (prázdný,
+když se jich den netýká). Díky tomu jdou testovat bez sítě a bez přihlášení.
+
+## Testy
+
+```bash
+pnpm test              # watch režim
+pnpm exec vitest run   # jednorázově
+```
+
+Testy pokrývají tu část, kde se dá nejsnáz udělat chyba: pašijový týden (pohyblivé
+datum odvozené od Velikonoc), skloňování u jmenin (`má` / `mají`, `a` / čárka) a
+kontrolu duplicity včetně toho, že se půlnoc počítá podle Prahy, ne podle UTC.
 
 ## Použité knihovny
 
-- 🗓️ [holidays-cs](https://github.com/OzzyCzech/holidays-cs/)
-- 🗓️ [easter-date](https://github.com/OzzyCzech/easter-date/)
-- 🗓️ [namedays-cs](https://github.com/OzzyCzech/namedays-cs)
+- 🗓️ [holidays-cs](https://github.com/OzzyCzech/holidays-cs/) — státní svátky,
+  významné dny, Velikonoce a otevírací doba obchodů
+- 🗓️ [namedays-cs](https://github.com/OzzyCzech/namedays-cs) — jmeniny
+- 🗓️ [international-days-cs](https://github.com/OzzyCzech/international-days-cs) — mezinárodní dny
+- 🦋 [@atproto/api](https://github.com/bluesky-social/atproto) — klient Bluesky
+- ⏱️ [luxon](https://moment.github.io/luxon/) — práce s datem a časovými zónami
+
+Velikonoce počítá [easter-date](https://github.com/OzzyCzech/easter-date/), které
+se sem dostane přes `holidays-cs`.
 
 ## Licence
 
