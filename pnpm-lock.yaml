@@ -16,8 +16,8 @@ importers:
         specifier: ^0.20.44
         version: 0.20.44
       holidays-cs:
-        specifier: 2.1.16
-        version: 2.1.16
+        specifier: 2.1.17
+        version: 2.1.17
       international-days-cs:
         specifier: ^2.0.1
         version: 2.0.1
@@ -229,8 +229,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  easter-date@2.0.1:
-    resolution: {integrity: sha512-OJQNXYoBhIRCJ+3XAWbNljh3mOryaiiSjhoUHnc+NJitrHClg41hOjaBrdPoWOnyTn35BoEFba6NOq9H4mYBeg==}
+  easter-date@2.0.2:
+    resolution: {integrity: sha512-OBDFApB94AycpeBziPvSMvJSUwkbQQTyDbC89kX+8kr3tPjoaqBUYvlWOIL+1DESFNxbhUDc8BtLh1Jtc4Ysog==}
     engines: {node: '>=24'}
 
   es-module-lexer@2.3.2:
@@ -257,8 +257,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  holidays-cs@2.1.16:
-    resolution: {integrity: sha512-tOiGdHsm9utyCJ2T77O5USOWXi1mh0x7sfziPq8KbtAqveUfq/AAdTdNv5HkR43p+pIGDoy1vtytwXayQFkb2w==}
+  holidays-cs@2.1.17:
+    resolution: {integrity: sha512-4BoWJ9VEmLDsLAF7uOaDJe+e7mr/NkvagEFiNrVoNAKesUMg2bDvdrmsvm/tqN0OtmVYNLjRyJhrZa0ExSnT1Q==}
     engines: {node: '>=24'}
 
   international-days-cs@2.0.1:
@@ -674,7 +674,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  easter-date@2.0.1: {}
+  easter-date@2.0.2: {}
 
   es-module-lexer@2.3.2: {}
 
@@ -691,9 +691,9 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  holidays-cs@2.1.16:
+  holidays-cs@2.1.17:
     dependencies:
-      easter-date: 2.0.1
+      easter-date: 2.0.2
       luxon: 3.7.2
 
   international-days-cs@2.0.1: {}
