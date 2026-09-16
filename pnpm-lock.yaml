@@ -16,17 +16,17 @@ importers:
         specifier: ^0.20.44
         version: 0.20.44
       holidays-cs:
-        specifier: 2.1.15
-        version: 2.1.15
+        specifier: 2.1.16
+        version: 2.1.16
       international-days-cs:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.0.1
+        version: 2.0.1
       luxon:
         specifier: ^3.7.2
         version: 3.7.2
       namedays-cs:
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 2.0.1
+        version: 2.0.1
     devDependencies:
       vitest:
         specifier: ^5.0.1
@@ -229,8 +229,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  easter-date@2.0.0:
-    resolution: {integrity: sha512-cohgK+RLhUQjT7hNPgf1MJECsfmnUpXm15Wz3YINmA5h+RRunmcXCOrZJYM9P6r0pzLZxGvMFc9IfhrAoLlbYg==}
+  easter-date@2.0.1:
+    resolution: {integrity: sha512-OJQNXYoBhIRCJ+3XAWbNljh3mOryaiiSjhoUHnc+NJitrHClg41hOjaBrdPoWOnyTn35BoEFba6NOq9H4mYBeg==}
     engines: {node: '>=24'}
 
   es-module-lexer@2.3.2:
@@ -257,12 +257,12 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  holidays-cs@2.1.15:
-    resolution: {integrity: sha512-xKIYPY5qIcZLMOTuYT1+h7pnEpilU8Cy7xNcrpe8G3a/X2JkeLag9I2Qo7cdSSjVsrizXmtWqGvEUlC1QTPJUQ==}
+  holidays-cs@2.1.16:
+    resolution: {integrity: sha512-tOiGdHsm9utyCJ2T77O5USOWXi1mh0x7sfziPq8KbtAqveUfq/AAdTdNv5HkR43p+pIGDoy1vtytwXayQFkb2w==}
     engines: {node: '>=24'}
 
-  international-days-cs@2.0.0:
-    resolution: {integrity: sha512-+UUMThRdewmjGheWDykfdbBXbWk2ftFEg/8micK0t2DE1WZyvuHkBHMEBKQ//mxcA1Lnhytu9sJyNP9MG5VsOw==}
+  international-days-cs@2.0.1:
+    resolution: {integrity: sha512-Ljl3i571BuvRDBvtQWUrb+Xy4028LEPxZum6yoadQFZYuY0S2hEDJlEspnR77fCA0tVqzFn728l9Eba+sXiFbA==}
     engines: {node: '>=24'}
 
   iso-datestring-validator@2.2.2:
@@ -352,8 +352,8 @@ packages:
   multiformats@13.4.2:
     resolution: {integrity: sha512-eh6eHCrRi1+POZ3dA+Dq1C6jhP1GNtr9CRINMb67OKzqW9I5DUuZM/3jLPlzhgpGeiNUlEGEbkCYChXMCc/8DQ==}
 
-  namedays-cs@2.0.0:
-    resolution: {integrity: sha512-y6FdNYDJ/b835xLTpDskyEYw3WLCfmrhX1FrPGHCGoolFgoSE7ZJK+XCHzQG7N/XJXE1l+VRtZuHfIyK9uw7fw==}
+  namedays-cs@2.0.1:
+    resolution: {integrity: sha512-sTcy/cJuhzfsVPSvj6otlCHYVZP5qLzzXMmtG3IqpA5NeyX8+/Bc8a4b2bibxTvBEf5tfmgN/37EnIVKPHGc9w==}
     engines: {node: '>=24'}
 
   nanoid@3.3.18:
@@ -367,10 +367,6 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
-
-  picomatch@4.0.4:
-    resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
-    engines: {node: '>=12'}
 
   picomatch@4.0.7:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
@@ -678,7 +674,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  easter-date@2.0.0: {}
+  easter-date@2.0.1: {}
 
   es-module-lexer@2.3.2: {}
 
@@ -688,19 +684,19 @@ snapshots:
 
   expect-type@1.4.0: {}
 
-  fdir@6.5.0(picomatch@4.0.4):
+  fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
-      picomatch: 4.0.4
+      picomatch: 4.0.7
 
   fsevents@2.3.3:
     optional: true
 
-  holidays-cs@2.1.15:
+  holidays-cs@2.1.16:
     dependencies:
-      easter-date: 2.0.0
+      easter-date: 2.0.1
       luxon: 3.7.2
 
-  international-days-cs@2.0.0: {}
+  international-days-cs@2.0.1: {}
 
   iso-datestring-validator@2.2.2: {}
 
@@ -761,15 +757,13 @@ snapshots:
 
   multiformats@13.4.2: {}
 
-  namedays-cs@2.0.0: {}
+  namedays-cs@2.0.1: {}
 
   nanoid@3.3.18: {}
 
   obug@2.2.1: {}
 
   picocolors@1.1.1: {}
-
-  picomatch@4.0.4: {}
 
   picomatch@4.0.7: {}
 
@@ -814,8 +808,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
 
   tlds@1.261.0: {}
 
@@ -826,7 +820,7 @@ snapshots:
   vite@8.0.16:
     dependencies:
       lightningcss: 1.32.0
-      picomatch: 4.0.4
+      picomatch: 4.0.7
       postcss: 8.5.26
       rolldown: 1.0.3
       tinyglobby: 0.2.17
